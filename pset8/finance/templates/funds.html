@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+    <form action="/funds" method="post">
+        <h2>You have {{ cash }} in cash.</h2>
+        <div style="padding: 10px">
+            <h4>(-) negative values -> withdraw</h4>
+            <h4>(+) positive values -> fund</h4>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="funds" placeholder="Funds" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">fund/withdraw</button>
+    </form>
+{% endblock %}

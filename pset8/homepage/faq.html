@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>CS50Atlas Stake Pool</title>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">
+
+    <img src="media/Transparent_logo.png" height="40" alt="" loading="lazy">
+
+    </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="guide.html">Guide</a></li>
+
+                <li><a href="delegation.html">Delegation</a></li>
+
+                <li><a href="#" class="active">FAQ</a></li>
+
+                <li><a href="cs50.html">CS50</a></li>
+
+                <li><a href="index.html#contact_sec">Contact</a></li>
+            </ul>
+        </nav>
+
+    <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+  </header>
+
+  <!--when clicked on the burger menu change visibility state of menu-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script>
+      $(document).ready(function(){
+          $('.menu-toggle').click(function(){
+              $('nav').toggleClass('active');
+          });
+      });
+  </script>
+
+
+<div class="mysection_dark">
+    <div class="div_max">
+    <h3>FAQ</h3>
+
+    <button class="accordion">Q1: What is CARDANO?</button>
+    <div class="panel">
+      <p>
+        CARDANO is an open-source decentralized blockchain of the 3rd generation (Bitcoin – 1st gen, Ethereum – 2nd gen). It is the first project in the crypto space to base its development entirely on a scientific and peer-reviewed approach. It is constructed on a layer-based structure to allow for a maximum of future flexibility, maintainability, and upgradeability. The settlement layer thereof is the ADA cryptocurrency. In future upgrades CARDANO aims to introduce smart contracts and provide a platform for decentralized applications (DApps).
+      </p>
+    </div>
+
+    <button class="accordion">Q2: What is ADA?</button>
+    <div class="panel">
+      <p>
+        ADA (₳) is the underlying currency used in the CARDANO blockchain. It can be traded on cryptocurrency exchanges. As with most crypto coins, it is highly advisable to transfer those funds to a secure wallet (i.e. Deadalus, Yoroi).
+      </p>
+    </div>
+
+    <button class="accordion">Q3: How does it work?</button>
+    <div class="panel">
+      <p>
+        The core concept of a decentralized blockchain system lies in the consensus that all network participants have to arrive at. For CARDANO this is achieved with the Ouroboros algorithm. It is the first proof of stake protocol (POS) that has been mathematically proven to be secure. Its underlying mechanism is that a participant with an investment (stake) in the network is considered a good participant. He or she will have an incentive that the network stays healthy and will act accordingly. The protocol will reinforce honest behavior by offering rewards in the form of ADA for those players.
+      </p>
+      <p>
+        For a deeper technical understanding, all of the published papers can be reviewed at: <a href="https://cardano.org/en/academic-papers/">cardano.org/en/academic-papers</a>.
+      </p>
+    </div>
+
+    <button class="accordion">Q4: Where do the rewards come from?</button>
+    <div class="panel">
+      <p>
+        Rewards in the ADA staking process come from two sources.
+      </p>
+      <p>
+        The first part comes from a pool of not-yet-circulating ADA. The maximum amount of ADA to ever be in circulation is set by the protocol to be 45B. The current total supply is about 31B. This gives an amount of approximately 14B ADA coins to be supplied in a predetermined manner in which the rate of new ADA added will decrease over time. One part of those newly added coins will go to the participants in the staking process.
+      </p>
+      <p>
+        The second part comes from transaction fees. With the rise of adoption and applications available it is expected that over time those transaction fees will make up the main source for the rewards.
+      </p>
+    </div>
+
+    <button class="accordion">Q5: What is staking?</button>
+    <div class="panel">
+      <p>
+        Staking is the act of delegating your ADA to a stake pool. You will therefore have “skin in the game“ (your stake) and will be rewarded accordingly if the chosen stake pool produces blocks for the network.
+      </p>
+      <p>
+        Important: Your ADA will never leave your wallet! The process of delegation is only linking your ADA to a respective stake pool. It can be canceled or modified at any given time.
+      </p>
+    </div>
+
+    <button class="accordion">Q6: What is a stake pool?</button>
+    <div class="panel">
+      <p>
+        A stake pool is a core node in the network that has the whole transaction history of the blockchain saved and keeps consensus about all ongoing transactions with the other nodes. Additionally, a stake pool has the ability to participate in creating the cryptographic blocks of the chain when it is elected by the network to do so. The likelihood for a core node to be chosen to produce such blocks is correlated with the amount of stake that has been delegated to it.
+      </p>
+    </div>
+
+    <button class="accordion">Q7: Which stake pool should I choose?</button>
+    <div class="panel">
+      <p>
+        Clearly, you would want to delegate your ADA to a pool that gives you the best return on your investment (ROI). A good indication to go by is the ranking a pool achieves in the delegation section of your wallet. However, there are a few factors that are difficult for the algorithm to predict which you might also want to consider. For instance, the current ranking will only ever be based on past performance. If you do not want to miss out on rewards too often due to the low quality of a pool (no backup power, lost internet connection, low security standards, etc.), you should also consider making an assessment on the long-term reliability. This can be done by having a look at the operator’s provided channels to get a feel for the quality level of the services and equipment offered, by asking individual questions, and finally, can be seen by the amount of pledge (“skin in the game”) the operator has himself. Naturally, we at Atlas Stake Pool see ourselves as an ideal fit for you. This is why we go the extra length in presenting our operation here to you. We also aim to respond to any of your questions as quickly as possible. And to demonstrate our long-term commitment, we have decided to pledge  ₳500,000.
+      </p>
+    </div>
+
+    <button class="accordion">Q8: Is it safe?</button>
+    <div class="panel">
+      <p>
+        Yes. Your ADA coins will be as safe as if you hadn’t staked them at all. They will, and should, never leave the wallet controlled by you. Never send your coins to anyone claiming to stake them for you. Staking should ideally only be done via the official supported wallets Deadalus or Yoroi.
+      </p>
+    </div>
+
+    <button class="accordion">Q9: What are the risks?</button>
+    <div class="panel">
+      <p>
+        Apart from the obvious exposure to volatile and unpredictable market movements, the biggest “risk“ would be choosing a stake pool that didn’t give the best returns, or shuts down all together, leaving you with no additional rewards. But even in this case, your own funds will never be affected since they stay in your personal wallet at all times.
+      </p>
+      <p>
+        Therefore, the worst case scenario for you would be to have “lost” potential rewards for that specific epoch (one epoch in the CARDANO ecosystem lasts for five days). If you see unsatisfactory behavior you can change your stake pool which will take effect as soon as the next epoch starts. In short, if you are not happy with the performance of your chosen pool you can change it, and all you will have lost is about 10 days of potential rewards.
+      </p>
+    </div>
+
+    <button class="accordion">Q10: How much do I have to monitor my investment?</button>
+    <div class="panel">
+      <p>
+        Ideally, not at all. However, at least in the starting phase it would be a good idea to check in maybe once every epoch (five days) to get a reassurance that your chosen pool performs to your satisfaction.
+      </p>
+    </div>
+
+    <script src="scripts.js"></script>
+
+    </div>
+
+    <img class="center" src="media/atlas_logo_white.png" alt="ATLAS logo" style="height:12em; padding: 4em 0em 0.5em 1.3em;">
+
+    <div style="text-align:center; padding-top: 50px;">
+        <button class="button" onclick="document.location='index.html'">Back to Home</button>
+    </div>
+
+</div>
+
+</body>
+</html>

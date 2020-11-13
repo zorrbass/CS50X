@@ -1,0 +1,16 @@
+5
+a
+c
+b
+a
+c
+b
+b
+c
+a
+b
+c
+a
+c
+a
+b

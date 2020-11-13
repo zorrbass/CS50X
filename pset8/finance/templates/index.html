@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+
+<table id="index">
+  <tr>
+    <th>Symbol</th>
+    <th>Name</th>
+    <th>Shares</th>
+    <th>Price</th>
+    <th style="text-align: right; padding-right: 15px">TOTAL</th>
+  </tr>
+
+  {% for item in range(leng) %}
+  <tr>
+    <td> {{ index_dict["Symbol"][item] }}</td>
+    <td> {{ index_dict["Name"][item] }}</td>
+    <td> {{ index_dict["Shares"][item] }}</td>
+    <td> {{ index_dict["Price"][item] }}</td>
+    <td style="text-align: right; padding-right: 15px"> {{ index_dict["Total"][item] }}</td>
+  </tr>
+  {% endfor %}
+  <tr>
+    <td>CASH</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="text-align: right; padding-right: 15px"> {{ cash }} </td>
+  </tr>
+
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th style="text-align: right; padding-right: 15px"> {{ total }} </th>
+  </tr>
+</table>
+{% endblock %}
