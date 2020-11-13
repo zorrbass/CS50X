@@ -3,6 +3,7 @@
 #include <math.h>
 
 //program takes an amout of change as input and calculates how manny coins are needed to pay it out
+// new comment add test for git
 
 int main(void)
 {
