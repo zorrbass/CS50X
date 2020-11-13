@@ -1,5 +1,5 @@
 # Default ignored files
+*.zip
 /pset4
-
 /pset5/speller/texts
 movies.db
